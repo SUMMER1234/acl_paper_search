@@ -1,0 +1,17 @@
+*.zip
+*.tar
+*.gz
+*.rar
+*.iso
+*.dmg
+*.exe
+*.dll
+*.so
+*.bib
+
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.bib
