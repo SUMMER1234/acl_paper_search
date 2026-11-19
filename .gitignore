@@ -8,10 +8,19 @@
 *.dll
 *.so
 *.bib
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.ris
+*.pickle
+.DS_Store
+.idea/
+.ipynb_checkpoints/
+RE_ACL/search_history.md
 
 node_modules/
 .venv/
 venv/
 __pycache__/
 *.pyc
-*.bib

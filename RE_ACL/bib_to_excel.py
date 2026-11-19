@@ -1,6 +1,11 @@
 #coding=utf-8
 
-import json
+
+if __package__:
+    from . import file_paths as paths
+else:
+    import file_paths as paths
+
 import re
 import time
 import bibtexparser
@@ -35,7 +40,7 @@ remove_chars = '[·’!"\#$%&\'()＃！（）*+,-./:;<=>?\@，：?￥★、…�
 
 #read general database
 start_time = time.time()
-with open("ACL_qualitative_0926.bib", "r") as screen_all:
+with open(paths.FILTERED_BIB, "r") as screen_all:
     bib_database = bibtexparser.load(screen_all)
     end_time = time.time()
     print("loading time: "+str(end_time-start_time))
@@ -82,4 +87,4 @@ data_chart={
 
 }
 df = pd.DataFrame.from_dict(data=data_chart)
-df.to_excel('Screen_result_1009.xlsx', index=False,encoding='utf-8-sig')
+df.to_excel(paths.CURRENT_RESULTS, index=False,encoding='utf-8-sig')
