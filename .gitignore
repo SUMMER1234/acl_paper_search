@@ -17,7 +17,7 @@
 .DS_Store
 .idea/
 .ipynb_checkpoints/
-RE_ACL/search_history.md
+search_history.md
 
 node_modules/
 .venv/
